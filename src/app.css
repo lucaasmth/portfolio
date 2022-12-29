@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    color: white !important;
+}
+
+code {
+    color: white;
+}
+
+.mockup-code pre::before {
+    margin-right: 1.75ch !important;
+}
+
+.short-text {
+    display: none;
+}
+
+@media (max-width: 875px) {
+    .short-text {
+        display: inline-block;
+    }
+
+    .long-text {
+        display: none;
+    }
+}
