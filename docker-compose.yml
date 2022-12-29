@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  portfolio:
+    container_name: portfolio
+    image: portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
